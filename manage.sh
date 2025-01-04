@@ -14,12 +14,12 @@ if [ "$1" = "install" ]; then
 
     echo "   ..."
 
-    cp -r i3 nvim $DOTCONFIG
+    cp -r i3 i3status nvim $DOTCONFIG
     cp .Xresources $HOME
 
     echo "  Done."
 elif [ "$1" = "write" ]; then
-    cp -r $DOTCONFIG/i3 $DOTCONFIG/nvim $HOME/.Xresources .
+    cp -r $DOTCONFIG/i3 $DOTCONFIG/i3status $DOTCONFIG/nvim $HOME/.Xresources .
 else
     echo "  COMMANDS"
     echo "    install"
