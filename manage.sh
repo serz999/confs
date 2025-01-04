@@ -22,11 +22,8 @@ elif [ "$1" = "write" ]; then
     cp -r $DOTCONFIG/i3 $DOTCONFIG/nvim $HOME/.Xresources .
 else
     echo "  COMMANDS"
-    echo
     echo "    install"
     echo "      install configuration from repo onto system"
-    echo
     echo "    write"
     echo "      write configs from system to this repo"
-    echo
 fi
