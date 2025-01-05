@@ -24,9 +24,6 @@ vim.keymap.set("n", "<leader>P", "\"+P")
 
 -- Buffers keymap 
 vim.keymap.set ('n', 'q', '<cmd>bd<cr>')
--- TODO
--- vim.keymap.set('n', 'H', ':BufferLineCyclePrev<CR>')
--- vim.keymap.set('n', 'L', ':BufferLineCycleNext<CR>')
 
 vim.keymap.set('n', '<leader><space>', '<Cmd>nohlsearch<CR>')
 
