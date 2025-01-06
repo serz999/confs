@@ -6,6 +6,5 @@ return {
          }
 
          vim.keymap.set("n", "T", "<cmd>TroubleToggle<cr>")
-         -- vim.keymap.set("n", "T", "<cmd>TroubleToggle quickfix<cr>")
      end
 }

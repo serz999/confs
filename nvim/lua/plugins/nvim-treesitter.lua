@@ -1,3 +1,4 @@
+-- It is a plugin for a better highlighting of text
 return {
     'nvim-treesitter/nvim-treesitter',
     build = function()
@@ -6,7 +7,7 @@ return {
     end,
     opts = {
       -- A list of parser names, or "all" (the five listed parsers should always be installed)
-      ensure_installed = {"help", "rust", "typescript", "javascript", "c", "lua", "vim", "vimdoc", "query", "python" },
+      ensure_installed = "all",
 
       -- Install parsers synchronously (only applied to `ensure_installed`)
       sync_install = false,
