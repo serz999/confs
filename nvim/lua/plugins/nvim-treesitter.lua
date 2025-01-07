@@ -1,4 +1,4 @@
--- It is a plugin for a better highlighting of text
+-- Configuration plugin for buildin nvim treesitter
 return {
     'nvim-treesitter/nvim-treesitter',
     build = function()
