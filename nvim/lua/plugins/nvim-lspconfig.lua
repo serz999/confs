@@ -189,7 +189,7 @@ return {
 					})
 				end)
 			end,
-		},
+		}
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
