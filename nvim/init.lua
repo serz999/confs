@@ -1,6 +1,5 @@
--- Vanilla nvim setup
-require("set")
-require("keymap")
+-- Vanilla neovim settings
+require("vanilla")
 
 -- Clone & setup lazy.nvim plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
