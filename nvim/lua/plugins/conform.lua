@@ -19,7 +19,7 @@ return {
 				c = { "clang-format" },
 				["c#"] = { "clang-format" },
 				["c++"] = { "clang-format" },
-				java = { "clang-format" },
+				java = { "google-java-format" },
 				typescript = { "prettier" },
 				javascript = { "prettier" },
 				css = { "prettier" },
