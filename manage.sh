@@ -11,17 +11,13 @@ if [ "$1" = "install" ]; then
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         exit 1
     fi
-
-    rm -rf $DOTCONFIG/i3 $DOTCONFIG/i3status $DOTCONFIG/nvim $HOME/.Xresources
-
+    rm -rf $DOTCONFIG/i3 $DOTCONFIG/i3status $DOTCONFIG/nvim
+    cp -v .Xresources .gitconfig $HOME
     cp -rv i3 i3status nvim $DOTCONFIG
-    cp -v .Xresources $HOME
-
     echo "Done"
 elif [ "$1" = "write" ]; then
-    rm -rf i3 i3status nvim .Xresources
-
-    cp -rv $DOTCONFIG/i3 $DOTCONFIG/i3status $DOTCONFIG/nvim $HOME/.Xresources .
+    rm -rf i3 i3status nvim
+    cp -rv $DOTCONFIG/i3 $DOTCONFIG/i3status $DOTCONFIG/nvim $HOME/.Xresources $HOME/.gitconfig .
     git diff
 else
     echo "  COMMANDS"

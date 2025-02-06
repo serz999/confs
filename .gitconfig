@@ -1,0 +1,8 @@
+[user]
+	email = serz99992@gmail.com
+	name = serz999
+[credential]
+	helper = store
+[core]
+	editor = nvim
+	pager = less
