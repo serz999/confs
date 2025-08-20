@@ -1,6 +1,9 @@
 [user]
 	email = serz99992@gmail.com
 	name = serz999
+[alias]
+    pt = !(git tag -a $1 -m '' || echo -n '') && git push $2 refs/tags/$1 && :
+    dt = !(git tag -d $1 || echo -n '') && git push --delete $2 refs/tags/$1 && :
 [credential]
 	helper = store
 [core]
