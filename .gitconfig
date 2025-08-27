@@ -4,6 +4,7 @@
 [alias]
     pt = !(git tag -a $1 -m '' || echo -n '') && git push $([ -z "$2" ] && echo 'origin' || echo $2) refs/tags/$1 && :
     dt = !(git tag -d $1 || echo -n '') && git push --delete $([ -z "$2" ] && echo 'origin' || echo $2) refs/tags/$1 && :
+    rt = !git dt $1 $2 && git pt $1 $2 && :
 [credential]
 	helper = store
 [core]
