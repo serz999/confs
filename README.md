@@ -6,4 +6,6 @@
     - npm 11.0.0 or above (for successful installation of some LSP servers)
 - x11
 - rxvt-unicode
+- i3
+    - dmenu
 - git
